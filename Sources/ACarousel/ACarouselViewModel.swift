@@ -287,7 +287,7 @@ extension ACarouselViewModel {
         /// At the end of the drag, if the drag value exceeds the drag threshold,
         /// the active view will be toggled
         /// default is one third of subview
-        if UIApplication.shared.userInterfaceLayoutDirection == .rightToLeft {
+        if UIView.appearance().semanticContentAttribute == .forceRightToLeft {
             
             let dragThreshold: CGFloat = itemWidth / 3
             

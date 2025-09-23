@@ -246,7 +246,7 @@ extension ACarouselViewModel {
         /// Avoid dragging more than the values of multiple subviews at the end of the drag,
         /// and still only one subview is toggled
         ///Support RTL
-        if UIView.appearance().semanticContentAttribute == .forceLeftToRight {
+        if UIView.appearance().semanticContentAttribute == .forceRightToLeft {
 
         var offset: CGFloat = itemActualWidth
         if value.translation.width > 0 {
